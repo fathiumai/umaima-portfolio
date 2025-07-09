@@ -1,184 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fathima Umaima | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(120deg, #2c3e50, #34495e);
-      color: white;
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #ecf0f1;
-    }
-    nav {
-      background: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #2c3e50;
-      font-weight: 600;
-    }
-    nav a:hover {
-      color: #e67e22;
-    }
-    section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #e67e22;
-      display: inline-block;
-    }
-    section ul {
-      list-style: none;
-      margin-top: 1rem;
-      padding-left: 1rem;
-    }
-    section ul li::before {
-      content: '✔';
-      margin-right: 0.5rem;
-      color: #e67e22;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-    .contact {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-    }
-    footer {
-      background: #1a252f;
-      color: #ccc;
-      text-align: center;
-      padding: 1rem;
-    }
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,500,400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Fathima Umaima</h1>
-    <p>IT Graduate | Software Engineer | ICT Teacher</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Motivated and adaptable IT graduate with a passion for education and software development. With hands-on internship experience at TRACE Sri Lanka and teaching roles in international schools, I blend technical know-how with strong communication and leadership skills. Seeking opportunities to contribute to meaningful projects and grow in the tech industry.</p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <div class="grid">
-      <div>
-        <h3>Open University of Sri Lanka</h3>
-        <p>Bachelor of Science (General) - Final Year</p>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-pic"></div>
+      <h1>Fathima Umaima</h1>
+      <p class="role">IT Graduate &amp; Educator</p>
+      <div class="contact">
+        <a href="mailto:fathiuami20@gmail.com">fathiuami20@gmail.com</a><br>
+        <a href="tel:+94779011551">+94 779011551</a>
       </div>
-      <div>
-        <h3>University of Colombo School of Computing</h3>
-        <p>Bachelor of Information Technology</p>
+      <nav class="sidebar-nav">
+        <a href="#profile" class="nav-link">Profile</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#extracurricular" class="nav-link">Extra-Curricular</a>
+        <a href="#declaration" class="nav-link">Declaration</a>
+      </nav>
+      <div class="sidebar-links">
+        <a href="#" target="_blank" class="sidebar-link">LinkedIn</a>
+        <a href="#" target="_blank" class="sidebar-link">GitHub</a>
       </div>
-      <div>
-        <h3>HNDIT</h3>
-        <p>Higher National Diploma in IT - Completed</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="grid">
-      <div>
-        <h3>Software Engineer Intern</h3>
-        <p><strong>TRACE Sri Lanka (Oct 2024 – Apr 2025)</strong></p>
+    </aside>
+    <main class="main-content">
+      <section class="section-card" id="profile">
+        <h2>Profile</h2>
+        <p>
+          Motivated and adaptable IT graduate with teaching experience and hands-on internship in software engineering. 
+          Seeking an entry-level role to apply my skills in technology, education, and development while contributing to impactful projects.
+        </p>
+      </section>
+      <section class="section-card" id="education">
+        <h2>Education</h2>
         <ul>
-          <li>Worked on web applications using HTML, CSS, JS</li>
-          <li>Tested features and participated in sprints</li>
+          <li><strong>B.Sc. (General)</strong>, The Open University of Sri Lanka <span class="ed-year">Final Year (Reading)</span></li>
+          <li><strong>Bachelor of Information Technology</strong>, University of Colombo School of Computing</li>
+          <li><strong>Higher National Diploma in IT</strong> (2-year program, Completed)</li>
         </ul>
-      </div>
-      <div>
-        <h3>ICT Teacher</h3>
-        <p><strong>Mount Royal International School</strong></p>
+      </section>
+      <section class="section-card" id="experience">
+        <h2>Experience</h2>
+        <div class="job-card">
+          <h3>Software Engineering Intern <span class="job-place">@ TRACE, Colombo</span></h3>
+          <p class="job-date">Oct 2024 – Apr 2025</p>
+          <ul>
+            <li>Assisted in developing and testing web-based applications.</li>
+            <li>Worked with HTML, CSS, JavaScript, and basic backend tools.</li>
+            <li>Collaborated in team discussions and sprint planning meetings.</li>
+          </ul>
+        </div>
+        <div class="job-card">
+          <h3>ICT Teacher (English Medium) <span class="job-place">@ Mount Royal International School</span></h3>
+          <ul>
+            <li>Taught ICT to students from Grade 10 to 11 using practical and theory-based methods.</li>
+            <li>Prepared lesson plans, assignments, and tests aligned with the curriculum.</li>
+            <li>Used digital tools to enhance classroom engagement.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-card" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-flex">
+          <div>
+            <h4>Technical</h4>
+            <ul>
+              <li>Java, JavaScript, HTML, CSS</li>
+              <li>Spring Boot, MySQL</li>
+              <li>GitHub, VS Code, Figma (basic)</li>
+              <li>WordPress, MS Office</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Professional</h4>
+            <ul>
+              <li>Teamwork &amp; Leadership</li>
+              <li>Classroom &amp; Project Management</li>
+              <li>Problem Solving &amp; Troubleshooting</li>
+              <li>Multilingual (EN, SI, TA)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-card" id="extracurricular">
+        <h2>Extra-Curricular</h2>
         <ul>
-          <li>Taught Grade 10–11 in English Medium</li>
-          <li>Prepared lessons and interactive activities</li>
+          <li>Vice President, Botanical Society (OUSL) 2024/25</li>
+          <li>Secretary, Tamil Literary Union – Muslim Ladies’ College (2019/20)</li>
+          <li>Zonal Level Prize Winner, Oratory Competition</li>
+          <li>Speech &amp; Drama – Wendy Whatmore Academy (Grade 3)</li>
+          <li>Ucmas Mental Arithmetic Course, Genesis Academy Lanka</li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div>
-        <h4>Technical Skills</h4>
-        <ul>
-          <li>Java, JavaScript, HTML, CSS</li>
-          <li>Spring Boot, MySQL</li>
-          <li>WordPress, GitHub, VS Code, MS Office</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Professional Skills</h4>
-        <ul>
-          <li>Team collaboration & leadership</li>
-          <li>Effective communication (EN, SI, TA)</li>
-          <li>Debugging, troubleshooting, problem-solving</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a style="color: #f9ca24" href="mailto:fathiuami20@gmail.com">fathiuami20@gmail.com</a></p>
-    <p>Phone: +94 779011551</p>
-  </section>
-
+      </section>
+      <section class="section-card" id="declaration">
+        <h2>Declaration</h2>
+        <p>
+          I hereby certify that the above information is true and correct to the best of my knowledge.<br>
+          <em>M.R.F. Umaima</em>
+        </p>
+      </section>
+    </main>
+  </div>
   <footer>
-    <p>&copy; 2025 Fathima Umaima. Designed with ❤️ and HTML.</p>
+    &copy; 2025 Fathima Umaima. All rights reserved.
   </footer>
+  <script>
+    // Smooth scroll for sidebar navigation
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = document.querySelector(this.getAttribute('href'));
+        section.scrollIntoView({ behavior: 'smooth' });
+        // Optional: highlight active link
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Highlight nav link on scroll
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 120;
+      document.querySelectorAll('.nav-link').forEach(link => {
+        let section = document.querySelector(link.getAttribute('href'));
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
