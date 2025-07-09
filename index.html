@@ -1,119 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fathima Umaima | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
       color: #333;
-      background-color: #fefefe;
     }
     header {
-      background-color: #2c3e50;
-      color: #fff;
-      padding: 2rem 1rem;
+      background: linear-gradient(120deg, #2c3e50, #34495e);
+      color: white;
+      padding: 3rem 1rem;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ecf0f1;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #e67e22;
     }
     section {
-      padding: 2rem 1rem;
-      max-width: 900px;
+      padding: 3rem 1rem;
+      max-width: 1000px;
       margin: auto;
     }
-    h1, h2 {
-      color: #2c3e50;
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e67e22;
+      display: inline-block;
     }
-    ul {
-      line-height: 1.6;
+    section ul {
+      list-style: none;
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+    section ul li::before {
+      content: '✔';
+      margin-right: 0.5rem;
+      color: #e67e22;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
     .contact {
-      background-color: #ecf0f1;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    footer {
-      background-color: #2c3e50;
+      background: #2c3e50;
       color: white;
       text-align: center;
+      padding: 2rem;
+    }
+    footer {
+      background: #1a252f;
+      color: #ccc;
+      text-align: center;
       padding: 1rem;
+    }
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Fathima Umaima</h1>
-    <p>Bachelor of Science (OUSL) | Bachelor of IT (UCSC)</p>
+    <p>IT Graduate | Software Engineer | ICT Teacher</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Motivated and adaptable IT graduate with teaching experience and hands-on internship in software engineering. Seeking an entry-level role to apply my skills in technology, education, and development while contributing to impactful projects.</p>
+    <p>Motivated and adaptable IT graduate with a passion for education and software development. With hands-on internship experience at TRACE Sri Lanka and teaching roles in international schools, I blend technical know-how with strong communication and leadership skills. Seeking opportunities to contribute to meaningful projects and grow in the tech industry.</p>
   </section>
 
-  <section>
+  <section id="education">
     <h2>Education</h2>
-    <ul>
-      <li>Bachelor of Science (General) – The Open University of Sri Lanka (Final Year)</li>
-      <li>Bachelor of Information Technology – UCSC</li>
-      <li>Higher National Diploma in IT – Completed</li>
-    </ul>
+    <div class="grid">
+      <div>
+        <h3>Open University of Sri Lanka</h3>
+        <p>Bachelor of Science (General) - Final Year</p>
+      </div>
+      <div>
+        <h3>University of Colombo School of Computing</h3>
+        <p>Bachelor of Information Technology</p>
+      </div>
+      <div>
+        <h3>HNDIT</h3>
+        <p>Higher National Diploma in IT - Completed</p>
+      </div>
+    </div>
   </section>
 
-  <section>
+  <section id="experience">
     <h2>Experience</h2>
-    <h3>ICT Teacher – Mount Royal International School</h3>
-    <ul>
-      <li>Teaching ICT for Grade 10–11 students using practical and theoretical methods.</li>
-      <li>Preparing lesson plans, assignments, and using digital tools for engagement.</li>
-    </ul>
-    <h3>Software Engineering Intern – TRACE Sri Lanka</h3>
-    <ul>
-      <li>Worked on web apps using HTML, CSS, JavaScript.</li>
-      <li>Assisted with testing, sprint meetings, and team collaboration.</li>
-    </ul>
+    <div class="grid">
+      <div>
+        <h3>Software Engineer Intern</h3>
+        <p><strong>TRACE Sri Lanka (Oct 2024 – Apr 2025)</strong></p>
+        <ul>
+          <li>Worked on web applications using HTML, CSS, JS</li>
+          <li>Tested features and participated in sprints</li>
+        </ul>
+      </div>
+      <div>
+        <h3>ICT Teacher</h3>
+        <p><strong>Mount Royal International School</strong></p>
+        <ul>
+          <li>Taught Grade 10–11 in English Medium</li>
+          <li>Prepared lessons and interactive activities</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
-    <h4>Technical</h4>
-    <ul>
-      <li>Java, JavaScript, HTML, CSS</li>
-      <li>Spring Boot, MySQL</li>
-      <li>WordPress, GitHub, VS Code, MS Office</li>
-    </ul>
-    <h4>Professional</h4>
-    <ul>
-      <li>Teamwork, organization, leadership</li>
-      <li>Debugging and troubleshooting</li>
-      <li>Communication in English, Sinhala, Tamil</li>
-    </ul>
+    <div class="grid">
+      <div>
+        <h4>Technical Skills</h4>
+        <ul>
+          <li>Java, JavaScript, HTML, CSS</li>
+          <li>Spring Boot, MySQL</li>
+          <li>WordPress, GitHub, VS Code, MS Office</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Professional Skills</h4>
+        <ul>
+          <li>Team collaboration & leadership</li>
+          <li>Effective communication (EN, SI, TA)</li>
+          <li>Debugging, troubleshooting, problem-solving</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Languages & Activities</h2>
-    <ul>
-      <li>Trilingual: English, Sinhala, Tamil</li>
-      <li>Vice President – Botanical Society (OUSL 2024/25)</li>
-      <li>Secretary – Tamil Literary Union (Muslim Ladies’ College)</li>
-      <li>Winner – Zonal Oratory Competition</li>
-    </ul>
-  </section>
-
-  <div class="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:fathiuami20@gmail.com">fathiuami20@gmail.com</a></p>
+    <p>Email: <a style="color: #f9ca24" href="mailto:fathiuami20@gmail.com">fathiuami20@gmail.com</a></p>
     <p>Phone: +94 779011551</p>
-  </div>
+  </section>
 
   <footer>
-    &copy; 2025 Fathima Umaima. All rights reserved.
+    <p>&copy; 2025 Fathima Umaima. Designed with ❤️ and HTML.</p>
   </footer>
 </body>
 </html>
-
-
-Add portfolio index.html
