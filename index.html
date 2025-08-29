@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fathima Umaima | Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --jet: #18181B;
+            --blue: #3B82F6;
+            --neon: #22D3EE;
+            --white: #FFFFFF;
+            --gray: #23232a;
+            --text: #FFFFFF;
+            --muted: #A1A1AA;
+            --radius: 18px;
+            --shadow: 0 4px 32px rgba(59, 130, 246, 0.10);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--jet);
+            font-family: 'Inter', 'Roboto', Arial, sans-serif;
+            color: var(--text);
+            margin: 0;
+            min-height: 100vh;
+            font-size: 1.08rem;
+            letter-spacing: 0.01em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        header {
+            background: var(--jet);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0.7rem 2rem;
+        }
+
+        .navbar .logo {
+            font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--blue);
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 8px #18181b44;
+        }
+
+        .navbar nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.08rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 8px;
+            transition: background 0.18s, color 0.18s;
+        }
+
+        .navbar nav a:hover,
+        .navbar nav a.active {
+            background: var(--blue);
+            color: var(--jet);
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3.5rem 1rem 2.5rem 1rem;
+            background: var(--gray);
+            box-shadow: var(--shadow);
+            border-radius: var(--radius);
+            margin: 2.5rem auto 2rem auto;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--blue);
+            margin-bottom: 1.2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+            font-size: 2.5rem;
+            margin: 0.2em 0 0.1em 0;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-shadow: 0 2px 12px #18181b55;
+        }
+
+        .hero h2 {
+            font-family: 'Inter', 'Roboto', Arial, sans-serif;
+            font-size: 1.3rem;
+            color: var(--neon);
+            font-weight: 600;
+            margin: 0 0 1.2rem 0;
+            letter-spacing: 0.02em;
+        }
+
+        .hero .social {
+            display: flex;
+            gap: 1.1rem;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero .social a {
+            color: var(--blue);
+            font-size: 1.5rem;
+            transition: color 0.18s;
+        }
+
+        .hero .social a:hover {
+            color: var(--neon);
+        }
+
+        .hero .cv-btn {
+            color: var(--jet);
+            background: var(--blue);
+            border: none;
+            border-radius: 6px;
+            padding: 8px 22px;
+            font-weight: 700;
+            font-size: 1em;
+            transition: background 0.2s;
+            display: inline-block;
+            margin-top: 1em;
+            text-decoration: none;
+        }
+
+        .hero .cv-btn:hover {
+            background: var(--neon);
+            color: var(--jet);
+        }
+
+        .hero p {
+            font-family: 'Inter', 'Roboto', Arial, sans-serif;
+            color: var(--muted);
+            font-size: 1.13rem;
+            margin: 0 auto 0.5em auto;
+            max-width: 600px;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            background: var(--gray);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 3rem 2rem 2.5rem 2rem;
+            position: relative;
+        }
+
+        h2.section-title {
+            font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+            color: var(--blue);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.1rem;
+            border-left: 5px solid var(--neon);
+            padding-left: 0.7rem;
+            letter-spacing: 0.04em;
+            background: none;
+            box-shadow: none;
+            text-shadow: 0 2px 8px #18181b33;
+        }
+
+        .about-block,
+        .service-grid,
+        .project-grid,
+        .contact-block,
+        .contact-form {
+            background: none;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: var(--jet);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+            text-align: center;
+            transition: box-shadow 0.18s, transform 0.18s;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 8px 32px #3B82F633;
+            transform: translateY(-4px) scale(1.01);
+        }
+
+        .service-card i {
+            font-size: 2.2rem;
+            color: var(--neon);
+            margin-bottom: 0.7rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+            font-size: 1.18rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            color: var(--white);
+            text-shadow: 0 2px 8px #18181b33;
+        }
+
+        .service-card p {
+            font-family: 'Inter', 'Roboto', Arial, sans-serif;
+            font-size: 1.08rem;
+            color: var(--muted);
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .project-card {
+            background: var(--jet);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+            transition: box-shadow 0.18s, transform 0.18s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 8px 32px #22D3EE33;
+            transform: translateY(-4px) scale(1.01);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 0.7rem;
+            object-fit: cover;
+            max-height: 140px;
+            background: #fff1;
+        }
+
+        .project-card h4 {
+            font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+            margin: 0 0 0.2em 0;
+            color: var(--white);
+            font-size: 1.07rem;
+            font-weight: 700;
+        }
+
+        .project-card p {
+            font-family: 'Inter', 'Roboto', Arial, sans-serif;
+            font-size: 1.08rem;
+            color: var(--muted);
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+            margin: 0 0 0.5em 0;
+        }
+
+        .project-link {
+            color: var(--jet);
+            background: var(--neon);
+            border: none;
+            border-radius: 6px;
+            padding: 6px 18px;
+            font-weight: 700;
+            font-size: 1em;
+            transition: background 0.2s;
+            display: inline-block;
+            margin-top: 0.5em;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            background: var(--blue);
+            color: var(--jet);
+        }
+
+        .contact-block {
+            background: var(--jet);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.1em 1.2em;
+            font-size: 1.09em;
+            color: var(--white);
+            max-width: 400px;
+            margin: 0 auto 1.5em auto;
+            text-align: center;
+        }
+
+        .contact-block a {
+            color: var(--neon);
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.7em 1em;
+            border-radius: 8px;
+            border: 1px solid #3B82F6;
+            background: #23232a;
+            color: var(--white);
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background: var(--blue);
+            color: var(--jet);
+            border: none;
+            border-radius: 8px;
+            padding: 0.7em 1em;
+            font-size: 1.13rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            cursor: pointer;
+            transition: background 0.18s;
+        }
+
+        .contact-form button:hover {
+            background: var(--neon);
+            color: var(--jet);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            background: var(--jet);
+            padding: 1.2rem 0 0.7rem 0;
+            font-size: 1.05rem;
+            letter-spacing: 0.01em;
+            margin-top: 0;
+            box-shadow: 0 -2px 24px #23232a;
+        }
+
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                gap: 0.7rem;
+                padding: 0.7rem 0.5rem;
+            }
+
+            .hero {
+                padding: 2.2rem 0.5rem 1.5rem 0.5rem;
+            }
+
+            main {
+                padding: 0 0.5rem 2rem 0.5rem;
+            }
+
+            section {
+                padding: 2rem 0.7rem 1.5rem 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Fathima Umaima</div>
+            <nav>
+                <a href="#hole" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <img src="/profile_pic.png" alt="Profile">
+        <h1>Fathima Umaima</h1>
+        <h2>
+            <span id="typed-roles"></span>
+        </h2>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/fathima-umaima-4780881ba/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/fathiumai" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <a href="/UR_CV.pdf" class="cv-btn" download><i class="fas fa-download"></i> Download CV</a><br><br>
+
+
+        <p>Welcome to my portfolio! I am passionate about technology, education, and development. I love building
+            things, sharing knowledge, and collaborating on creative projects.</p>
+    </section>
+    <main>
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-block">
+                Hello! I'm Fathima Umaima, an IT graduate and educator based in Sri Lanka. I thrive on the synergy of
+                technology and creativity, specializing in web development, teaching, and mentoring. My skills span
+                coding,
+                digital tools, and a love for learning. I'm eager to contribute, innovate, and collaborate in the
+                ever-evolving tech landscape.
+            </div>
+        </section>
+        <section id="services">
+            <h2 class="section-title">My Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Create engaging websites tailored to your needs with modern technology and best practices.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Teaching & Mentoring</h3>
+                    <p>Empowering students and professionals through hands-on teaching and personalized mentoring.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Digital Content Creation</h3>
+                    <p>Designing digital resources, lesson plans, and creative content for education and business.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://teamsarose.github.io/media/Gamerzone.jpg" alt="Web Application Intern Project">
+                    <h4>Web Application Intern Project</h4>
+                    <p>A web application built using HTML, CSS, JavaScript, and MySQL as part of my internship at TRACE
+                        Sri
+                        Lanka.</p>
+                    <a href="https://t2t-platform.netlify.app/" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/16/01/35/48/1000_F_1601354834_DPi8SYYW8jJPuNoaVj5ZOfNaCumgkoIE.jpg"
+                        alt="Tasty Delight Cake System - Cake Shop Vector">
+                    <h4>Tasty Delight Cake Shop System</h4>
+                    <p>Final year project: A full-featured management and ordering system for Tasty Delight, enabling
+                        online cake orders, inventory, and customer management.Built with JAVA,HTML,CSS,MySQL, and
+                        Bootstrap.</p>
+                    <a href="https://github.com/fathiumai/cake-shop-system" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://img.freepik.com/premium-vector/travel-around-world-online-journey-couple-is-planning-their-trip-choosing-best-route-travel-agency-tour-abroad-color-vector-illustration-flat-style_61502026.jpg" alt="Al-Haram Travels and Tours - Online Journey">
+                    <h4>Al-Haram Travels and Tours</h4>
+                    <p>Developed a complete website and booking system for Al-Haram Travels and Tours, specializing in Umrah travel packages, customer inquiries, and online reservations. Built with HTML, CSS, JavaScript, and PHP.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+
+
+            </div>
+            <form class="contact-form"
+                style="background: var(--gray); box-shadow: var(--shadow); border-radius: var(--radius); padding: 2em 1.5em; max-width: 420px; margin: 0 auto;">
+                <div style="display: flex; gap: 1em; flex-wrap: wrap; margin-bottom: 1em;">
+                    <input type="text" placeholder="Your Name" required
+                        style="flex:1; min-width:180px; background: var(--jet); color: var(--white); border: 1px solid var(--blue);">
+                    <input type="email" placeholder="Your Email" required
+                        style="flex:1; min-width:180px; background: var(--jet); color: var(--white); border: 1px solid var(--blue);">
+                </div>
+                <textarea rows="4" placeholder="Your Message" required
+                    style="margin-bottom:1em; background: var(--jet); color: var(--white); border: 1px solid var(--blue);"></textarea>
+                <button type="submit"
+                    style="width: 100%; font-size: 1.15em; background: var(--blue); color: var(--jet); font-weight: 700; border-radius: 8px; border: none; padding: 0.8em 0;">Send
+                    Message <i class="fas fa-paper-plane" style="margin-left:8px;"></i></button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Fathima Umaima. All rights reserved.
+    </footer>
+    <script>
+        // Smooth scroll and nav highlight
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        window.addEventListener('scroll', () => {
+            let fromTop = window.scrollY + 120;
+            navLinks.forEach(link => {
+                let section = document.querySelector(link.getAttribute('href'));
+                if (
+                    section.offsetTop <= fromTop &&
+                    section.offsetTop + section.offsetHeight > fromTop
+                ) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+        // Prevent default form submission
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! (Form submission is a demo.)');
+        });
+        // Typing effect for job positions
+        const roles = ["Web Developer", "Educator", "Graduate"];
+        let roleIndex = 0, charIndex = 0, typing = true;
+        const typedSpan = document.getElementById('typed-roles');
+        function typeRole() {
+            if (!typedSpan) return;
+            if (typing) {
+                if (charIndex < roles[roleIndex].length) {
+                    typedSpan.textContent += roles[roleIndex][charIndex++];
+                    setTimeout(typeRole, 90);
+                } else {
+                    typing = false;
+                    setTimeout(typeRole, 1200);
+                }
+            } else {
+                if (charIndex > 0) {
+                    typedSpan.textContent = roles[roleIndex].substring(0, --charIndex);
+                    setTimeout(typeRole, 40);
+                } else {
+                    typing = true;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    setTimeout(typeRole, 400);
+                }
+            }
+        }
+        typeRole();
+    </script>
+</body>
+
+</html>
