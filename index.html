@@ -149,6 +149,9 @@ header {
 .hero .social a:hover {
     color: var(--neon);
 }
+.hero img { width:150px; }
+.hero h1 { font-size:2rem; }
+.hero .cv-btn { padding:8px 18px; }
 
 .hero .cv-btn {
     color: var(--jet);
@@ -438,6 +441,27 @@ footer {
     }
 }
 
+        @media(max-width:768px){
+    .navbar nav {
+        display:none; /* hide by default */
+        flex-direction:column;
+        width:100%;
+        background: var(--jet);
+        position:absolute;
+        top:60px;
+        left:0;
+        padding:1rem 0;
+        border-top:1px solid #3B82F6;
+    }
+    .navbar nav.show {
+        display:flex; /* shown when hamburger clicked */
+    }
+    .hamburger {
+        display:block; /* hamburger button visible */
+    }
+}
+
+
 
     </style>
 </head>
@@ -446,6 +470,8 @@ footer {
     <header>
         <div class="navbar">
             <div class="logo">Fathima Umaima</div>
+            <i class="fas fa-bars hamburger" id="hamburger"></i>
+
             <nav>
                 <a href="#hole" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -613,8 +639,19 @@ footer {
             }
         }
         typeRole();
+
+        const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+
     </script>
+
+    
 </body>
 
 </html>
+
 
