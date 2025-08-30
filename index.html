@@ -105,7 +105,7 @@ header {
 }
 
 .hero img {
-    width:150px;
+    width: 170px;
     height: 170px;
     border-radius: 50%;
     object-fit: cover;
@@ -115,7 +115,7 @@ header {
 
 .hero h1 {
     font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
-    font-size:2rem;
+    font-size: 2.5rem;
     margin: 0.2em 0 0.1em 0;
     color: var(--white);
     font-weight: 700;
@@ -155,7 +155,7 @@ header {
     background: var(--blue);
     border: none;
     border-radius: 6px;
-   padding:8px 18px
+    padding: 8px 22px;
     font-weight: 700;
     font-size: 1em;
     transition: background 0.2s;
@@ -467,8 +467,6 @@ footer {
     <header>
         <div class="navbar">
             <div class="logo">Fathima Umaima</div>
-            <i class="fas fa-bars hamburger" id="hamburger"></i>
-
             <nav>
                 <a href="#hole" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -487,8 +485,9 @@ footer {
         <div class="social">
             <a href="https://www.linkedin.com/in/fathima-umaima-4780881ba/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/fathiumai" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Gmail"><i class="fa-solid fa-envelope"></i></i></a>
         </div>
-       <a href="https://raw.githubusercontent.com/fathiumai/umaima-portfolio/main/UR_CV.pdf" class="cv-btn" download><i class="fas fa-download"></i> Download CV</a>
+       <a href="https://raw.githubusercontent.com/fathiumai/umaima-portfolio/main/UR_CV.pdf" class="cv-btn" download>Download CV</a>
 <br><br>
 
 
@@ -637,19 +636,13 @@ footer {
         }
         typeRole();
 
-        const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
-
     </script>
 
     
 </body>
 
 </html>
+
 
 
 
